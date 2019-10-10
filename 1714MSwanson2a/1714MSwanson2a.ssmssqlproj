@@ -89,6 +89,60 @@
           <AssociatedConnUserName />
           <FullPath>mswanson1714ex2a09.png</FullPath>
         </FileNode>
+        <FileNode Name="mswanson1714ex2b2-1.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-1.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-2.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-2.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-3.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-3.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-4.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-4.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-5.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-5.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-6.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-6.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-7.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-7.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-8.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-8.png</FullPath>
+        </FileNode>
+        <FileNode Name="mswanson1714ex2b2-9.png">
+          <AssociatedConnectionMoniker />
+          <AssociatedConnSrvName />
+          <AssociatedConnUserName />
+          <FullPath>mswanson1714ex2b2-9.png</FullPath>
+        </FileNode>
       </Items>
     </LogicalFolder>
   </Items>
