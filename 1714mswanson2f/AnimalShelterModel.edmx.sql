@@ -2,8 +2,8 @@
 -- --------------------------------------------------
 -- Entity Designer DDL Script for SQL Server 2005, 2008, 2012 and Azure
 -- --------------------------------------------------
--- Date Created: 10/25/2019 18:45:33
--- Generated from EDMX file: C:\Users\vick_12\Documents\Fall2019\IntroToVisual\1714MSwanson\1714MSwanson\1714mswanson2f\AnimalShelterModel.edmx
+-- Date Created: 11/10/2019 09:16:02
+-- Generated from EDMX file: C:\Users\vick_12\Documents\Fall2019\IntroToVisual\1714MSwanson\1714mswanson2f\AnimalShelterModel.edmx
 -- --------------------------------------------------
 
 SET QUOTED_IDENTIFIER OFF;
@@ -55,8 +55,8 @@ CREATE TABLE [dbo].[People] (
 );
 GO
 
--- Creating table 'DonationType'
-CREATE TABLE [dbo].[DonationType] (
+-- Creating table 'DonationTypes'
+CREATE TABLE [dbo].[DonationTypes] (
     [Id] int IDENTITY(1,1) NOT NULL,
     [Description] nvarchar(15)  NOT NULL
 );
@@ -94,9 +94,9 @@ ADD CONSTRAINT [PK_People]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
--- Creating primary key on [Id] in table 'DonationType'
-ALTER TABLE [dbo].[DonationType]
-ADD CONSTRAINT [PK_DonationType]
+-- Creating primary key on [Id] in table 'DonationTypes'
+ALTER TABLE [dbo].[DonationTypes]
+ADD CONSTRAINT [PK_DonationTypes]
     PRIMARY KEY CLUSTERED ([Id] ASC);
 GO
 
@@ -159,7 +159,7 @@ GO
 ALTER TABLE [dbo].[Donations]
 ADD CONSTRAINT [FK_DonationTypeDonation]
     FOREIGN KEY ([DonationType_Id])
-    REFERENCES [dbo].[DonationType]
+    REFERENCES [dbo].[DonationTypes]
         ([Id])
     ON DELETE NO ACTION ON UPDATE NO ACTION;
 GO

@@ -1,17 +1,17 @@
 ﻿-- DonationTypes
-SET IDENTITY_INSERT [dbo].[DonationType] ON 
+SET IDENTITY_INSERT [dbo].[DonationTypes] ON 
 GO
-INSERT [dbo].[DonationType] ([Id], [Description]) VALUES (1, N'Cash')
+INSERT [dbo].[DonationTypes] ([Id], [Description]) VALUES (1, N'Cash')
 GO
-INSERT [dbo].[DonationType] ([Id], [Description]) VALUES (2, N'Dog food')
+INSERT [dbo].[DonationTypes] ([Id], [Description]) VALUES (2, N'Dog food')
 GO
-INSERT [dbo].[DonationType] ([Id], [Description]) VALUES (3, N'Cat food')
+INSERT [dbo].[DonationTypes] ([Id], [Description]) VALUES (3, N'Cat food')
 GO
-INSERT [dbo].[DonationType] ([Id], [Description]) VALUES (4, N'Cages')
+INSERT [dbo].[DonationTypes] ([Id], [Description]) VALUES (4, N'Cages')
 GO
-INSERT [dbo].[DonationType] ([Id], [Description]) VALUES (5, N'Miscellaneous')
+INSERT [dbo].[DonationTypes] ([Id], [Description]) VALUES (5, N'Miscellaneous')
 GO
-SET IDENTITY_INSERT [dbo].[DonationType] OFF
+SET IDENTITY_INSERT [dbo].[DonationTypes] OFF
 GO
 -- AnimalTypes
 SET IDENTITY_INSERT [dbo].[AnimalTypes] ON 

@@ -28,7 +28,7 @@ namespace _1714mswanson2f
         public virtual DbSet<AnimalType> AnimalTypes { get; set; }
         public virtual DbSet<Animal> Animals { get; set; }
         public virtual DbSet<Person> People { get; set; }
-        public virtual DbSet<DonationType> DonationType { get; set; }
+        public virtual DbSet<DonationType> DonationTypes { get; set; }
         public virtual DbSet<Donation> Donations { get; set; }
     }
 }

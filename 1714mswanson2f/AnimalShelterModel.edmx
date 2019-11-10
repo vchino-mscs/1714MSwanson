@@ -9,7 +9,7 @@
     <EntitySet Name="AnimalTypes" EntityType="AnimalShelterModel.Store.AnimalTypes" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Animals" EntityType="AnimalShelterModel.Store.Animals" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="People" EntityType="AnimalShelterModel.Store.People" store:Type="Tables" Schema="dbo" />
-    <EntitySet Name="DonationType" EntityType="AnimalShelterModel.Store.DonationType" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DonationTypes" EntityType="AnimalShelterModel.Store.DonationTypes" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="Donations" EntityType="AnimalShelterModel.Store.Donations" store:Type="Tables" Schema="dbo" />
     <AssociationSet Name="AnimalTypeAnimal" Association="AnimalShelterModel.Store.AnimalTypeAnimal">
       <End Role="AnimalType" EntitySet="AnimalTypes" />
@@ -24,7 +24,7 @@
       <End Role="Donation" EntitySet="Donations" />
     </AssociationSet>
     <AssociationSet Name="DonationTypeDonation" Association="AnimalShelterModel.Store.DonationTypeDonation">
-      <End Role="DonationType" EntitySet="DonationType" />
+      <End Role="DonationType" EntitySet="DonationTypes" />
       <End Role="Donation" EntitySet="Donations" />
     </AssociationSet>
   </EntityContainer>
@@ -56,7 +56,7 @@
     <Property Name="LastName" Type="nvarchar" Nullable="false" MaxLength="35" />
     <Property Name="Phone" Type="nvarchar" Nullable="false" MaxLength="15" />
   </EntityType>
-  <EntityType Name="DonationType">
+  <EntityType Name="DonationTypes">
     <Key>
       <PropertyRef Name="Id" />
     </Key>
@@ -110,7 +110,7 @@
     </ReferentialConstraint>
   </Association>
   <Association Name="DonationTypeDonation">
-    <End Role="DonationType" Type="AnimalShelterModel.Store.DonationType" Multiplicity="1" />
+    <End Role="DonationType" Type="AnimalShelterModel.Store.DonationTypes" Multiplicity="1" />
     <End Role="Donation" Type="AnimalShelterModel.Store.Donations" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="DonationType">
@@ -137,14 +137,14 @@
             <End Role="Person" EntitySet="People" />
             <End Role="Animal" EntitySet="Animals" />
           </AssociationSet>
-          <EntitySet Name="DonationType" EntityType="AnimalShelterModel.DonationType" />
+          <EntitySet Name="DonationTypes" EntityType="AnimalShelterModel.DonationType" />
           <EntitySet Name="Donations" EntityType="AnimalShelterModel.Donation" />
           <AssociationSet Name="PersonDonation" Association="AnimalShelterModel.PersonDonation">
             <End Role="Person" EntitySet="People" />
             <End Role="Donation" EntitySet="Donations" />
           </AssociationSet>
           <AssociationSet Name="DonationTypeDonation" Association="AnimalShelterModel.DonationTypeDonation">
-            <End Role="DonationType" EntitySet="DonationType" />
+            <End Role="DonationType" EntitySet="DonationTypes" />
             <End Role="Donation" EntitySet="Donations" />
           </AssociationSet>
         </EntityContainer>
@@ -248,9 +248,9 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="DonationType">
+    <EntitySetMapping Name="DonationTypes">
       <EntityTypeMapping TypeName="IsTypeOf(AnimalShelterModel.DonationType)">
-        <MappingFragment StoreEntitySet="DonationType">
+        <MappingFragment StoreEntitySet="DonationTypes">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Description" ColumnName="Description" />
         </MappingFragment>

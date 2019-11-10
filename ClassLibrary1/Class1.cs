@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace _1714mswanson2f
+namespace ClassLibrary1
 {
     public class Class1
     {
